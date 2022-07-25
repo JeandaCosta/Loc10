@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOC10 - Locação de Máquinas e Equipamentos</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="main">
+        <header>
+            <a href="#"><img src="assets/img/logo_site.png" class="logo"></a>
+
+            <div class="toggle">
+
+            </div>
+
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="locacao.html">Locação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="text">
+                <h2><span>Locação e Venda</span><br> de Máquinas e Equipamentos</h2> <br>
+                <h3> VAI CONSTRUIR, REFORMAR OU AQUELE SERVIÇO DO FIM DE SEMANA ? </h3>
+                <p> Venha conhecer nossa empresa, você aluga ferramentas profissionais, de primeira linha,
+                    onde você irá pagar apenas o dia de uso, economizando no orçamento da sua obra.</p>
+
+                <a href="locacao.html" class="btn">Saiba mais</a>
+            </div>
+
+            <div class="slider">
+                <div class="slides active">
+                    <img src="assets/img/betoneira.webp">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/andaimes.webp">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/compressor.png">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/maqsolda.png">
+                </div>
+
+                <!-- Botões Prev Next -->
+                <div class="prevNext">
+                    <span class="prev">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </span>
+                    <span class="next">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="advantage">
+            <h1>Por que escolher LOC10?</h1>
+
+            <div class="container">
+
+                <div class="box">
+                    <span></span>
+                    <div class="content_box">
+                        <img src="/assets/icon/icon_preco.webp" alt="">
+                        <h2>Ótimos Preços</h2>
+                        <p>Preços competitivos que reduzem o custo da sua obra! </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span></span>
+                    <div class="content_box">
+                        <img src="/assets/icon/icon_relogio.webp" alt="">
+                        <h2>Períodos de locação flexíveis</h2>
+                        <p>Oferecemos períodos de 24Hrs a 30 dias de locação! </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span></span>
+                    <div class="content_box">
+                        <img src="/assets/icon/icon_entrega.webp" alt="">
+                        <h2>Entrega Imediata</h2>
+                        <p>Entregamos assim que você precisar, e retiramos logo que for necessário! </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span></span>
+                    <div class="content_box">
+                        <img src="/assets/icon/icon_fone.webp" alt="" class="suporte">
+                        <h2>Suporte</h2>
+                        <p>Desejamos que tenha um ótima experiência.
+                            Estamos à disposição para ajudar com qualquer problema ou dúvida! </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <h3>LOC10</h3>
+                <p>Av. dos Trabalhadores, 3809, Jd. Almira. Mogi Guaçu - SP</p>
+                <p><span>Telefone:</span> (19) 3861-4706</p>
+                <p><span>Whatsapp:</span> (19) 9 9889-2191</p>
+                <p><span>E-mail:</span> contato@locdez.com</p><br>
+            </div>
+
+            <span>® Todos os direitos reservados</span>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Locdez">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="https://www.instagram.com/locdez.mgu">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5519998892191&text&app_absent=0">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <!--
+            <div class="prevNext">
+                <span class="prev"><ion-icon name="chevron-back-outline"></ion-icon></span>
+                <span class="next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+            </div>
+            -->
+
+        </div>
+
+    </section>
+
+    <!-- SCRIPTS JS -->
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MENU TOGGLE
+        const menutoggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        // SLIDESHOW
+        const slides = document.querySelectorAll('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        i = 0;
+
+        function ActiveSlide(n) {
+            for (slide of slides)
+                slide.classList.remove('active');
+            slides[n].classList.add('active');
+        }
+
+        // FUNÇÃO BTN NEXT
+        next.addEventListener('click', function () {
+            if (i == slides.length - 1) {
+                i = 0;
+                ActiveSlide(i);
+            } else {
+                i++;
+                ActiveSlide(i);
+            }
+        })
+
+        // FUNÇÃO BTN PREV
+        prev.addEventListener('click', function () {
+            if (i == 0) {
+                i = slides.length - 1;
+                ActiveSlide(i);
+            } else {
+                i--;
+                ActiveSlide(i);
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

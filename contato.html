@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOC10 - Contato</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="main">
+        <header>
+            <a href="#"><img src="assets/img/logo_site.png" class="logo"></a>
+
+            <div class="toggle">
+
+            </div>
+
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="locacao.html">Locação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </header>
+
+        <div class="content">
+
+            <div class="contactUs">
+                <div class="title">
+                    <h2>Clique para Acessar</h2>
+                </div>
+
+                <div class="box">
+                    <!-- LOCALIZAÇÃO -->
+                    <div class="contact map">
+                        <h3>Localização</h3><hr>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.4367963277853!2d-46.93720508564765!3d-22.355163573623127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8565685f58d55%3A0xe2a3f284463e88fd!2sLOC10%20-%20Loca%C3%A7%C3%A3o%20e%20Venda%20de%20M%C3%A1quinas%20e%20Equipamentos!5e0!3m2!1spt-BR!2sbr!4v1657141251507!5m2!1spt-BR!2sbr"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- INFORMAÇÕES -->
+                    <div class="contact info">
+                        <h3>Informações e Contato</h3><hr>
+                        <div class="infoBox">
+                            <div class="link">
+                                <span><ion-icon name="call"></ion-icon></span>
+                                <p><strong>Telefone</strong><br>
+                                    <a href="tel:+551938614706" target="_blank"> (19) 3861-4706</a></p>
+                            </div>
+
+                            <div class="link">
+                                <span><ion-icon name="logo-whatsapp"></ion-icon></span>
+                                <p><strong>WhatsApp</strong><br>
+                                    <a href="https://api.whatsapp.com/send/?phone=5519998892191&text&app_absent=0" target="_blank"> (19) 9 9889-2191</a></p>
+                            </div>
+
+                            <div class="link">
+                                <span><ion-icon name="mail"></ion-icon></span>
+                                <p><strong>E-mail</strong><br>
+                                    <a href="mailto:contato@locdez.com" target="_blank"> contato@locdez.com</a></p>
+                            </div>
+
+                            <div>
+                                <span><ion-icon name="location-outline"></ion-icon></span>
+                                <p>Av. dos Trabalhadores, 3809. Jd Almira <br> Mogi Guaçu - SP<br> 13847-040 </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HORÁRIO DE FUNCIONAMENTO -->
+                    <div class="contact hour">
+                        <h3>Horário de Atendimento</h3><hr>
+                        <div class="infoBox">
+                            <div>
+                                <span><ion-icon name="time"></ion-icon></span>
+                                <p><strong>Segunda a Sexta</strong><br> 7:30hs às 17:30hs </p>
+                            </div>
+
+                            <div>
+                                <span><ion-icon name="time"></ion-icon></span>
+                                <p><strong>Sábado</strong><br> 8:00hs às 12:00hs </p>
+                            </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="info">
+                <h3>LOC10</h3>
+                <p>Av. dos Trabalhadores, 3809, Jd. Almira. Mogi Guaçu - SP</p>
+                <p><span>Telefone:</span> (19) 3861-4706</p>
+                <p><span>Whatsapp:</span> (19) 9 9889-2191</p>
+                <p><span>E-mail:</span> contato@locdez.com</p><br>
+            </div>
+
+            <span>® Todos os direitos reservados</span>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Locdez">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="https://www.instagram.com/locdez.mgu">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5519998892191&text&app_absent=0">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a></li>
+            </ul>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- SCRIPTS JS -->
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MENU TOGGLE
+        const menutoggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>

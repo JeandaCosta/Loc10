@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOC10 - Sobre</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="main">
+        <header>
+            <a href="#"><img src="assets/img/logo_site.png" class="logo"></a>
+
+            <div class="toggle">
+
+            </div>
+
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="locacao.html">Locação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Fundada em agosto de 1997, iniciamos nossas atividades no ramo
+                    de Locação de Máquinas e Equipamentos para Construção com o nome de <span>ALUG-MAQ</span>.</p>
+
+                <p>
+                    Em 2022 a empresa chega ao seu 25º ano, atendendo bem seus clientes e crescendo cada vez mais, nosso
+                    mercado de
+                    atuação também ampliou, agora trabalhamos não só com Locações de Máquinas, mas também com Vendas de
+                    Ferramentas e Equipamentos,
+                    que ajude ainda mais nossos clientes em suas necessidades.</p>
+
+                <p>
+                    Após algumas mudanças e parcerias nossa empresa passa ter uma nova marca para que seu
+                    crescimento seja melhor aproveitado, sendo assim, LOC10 passa a ser o nome principal. </p>
+
+                <p>
+                    Iniciamos nossos serviços em Mogi-Guaçu - SP, para atender a sua população e toda a região.
+                    Estamos buscando sempre melhorar nosso atendimento ao cliente.</p>
+            </div>
+
+            <div class="slider">
+                <div class="slides active">
+                    <img src="assets/img/img1.png">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/img2.png">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/img3.png">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/img4.png">
+                </div>
+                <div class="slides">
+                    <img src="assets/img/img5.png">
+                </div>
+
+                <!-- Botões Prev Next -->
+                <div class="prevNext">
+                    <span class="prev">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </span>
+                    <span class="next">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="info">
+                <h3>LOC10</h3>
+                <p>Av. dos Trabalhadores, 3809, Jd. Almira. Mogi Guaçu - SP</p>
+                <p><span>Telefone:</span> (19) 3861-4706</p>
+                <p><span>Whatsapp:</span> (19) 9 9889-2191</p>
+                <p><span>E-mail:</span> contato@locdez.com</p><br>
+            </div>
+
+            <span>® Todos os direitos reservados</span>
+
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Locdez">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="https://www.instagram.com/locdez.mgu">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5519998892191&text&app_absent=0">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a></li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCRIPTS JS -->
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MENU TOGGLE
+        const menutoggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function () {
+            menutoggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        // SLIDESHOW
+        const slides = document.querySelectorAll('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        i = 0;
+
+        function ActiveSlide(n) {
+            for (slide of slides)
+                slide.classList.remove('active');
+            slides[n].classList.add('active');
+        }
+
+        // FUNÇÃO BTN NEXT
+        next.addEventListener('click', function () {
+            if (i == slides.length - 1) {
+                i = 0;
+                ActiveSlide(i);
+            } else {
+                i++;
+                ActiveSlide(i);
+            }
+        })
+
+        // FUNÇÃO BTN PREV
+        prev.addEventListener('click', function () {
+            if (i == 0) {
+                i = slides.length - 1;
+                ActiveSlide(i);
+            } else {
+                i--;
+                ActiveSlide(i);
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

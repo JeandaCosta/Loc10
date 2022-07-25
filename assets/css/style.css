@@ -1,0 +1,699 @@
+/* PAG HOME */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: #FF5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 120px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    width: 500px;
+}
+
+.navigation {
+    display: flex;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    font-size: 1.3em;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.content .text {
+    width: 100%;
+    max-width: 800px;
+}
+
+.content .text h2 {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.content .text h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content .text h2 span {
+    font-weight: 700;
+}
+
+.content .text h3 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.content .text p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.content .text p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 20px 50px;
+    background: #fff;
+    color: #333;
+    font-size: 1.1em;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+}
+
+.slider {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.slider .slides {
+    display: none;
+}
+
+.slider .slides.active {
+    display: block;
+}
+
+.slider .slides img {
+    width: 100%;
+    max-width: 700px; 
+}
+
+
+.prevNext {
+    position: relative;
+    user-select: none;
+    z-index: 1000;
+}
+
+.prevNext span {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 2em;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.prevNext span:nth-child(2) {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* VANTAGENS */
+.advantage {
+    margin: 50px 0px;
+}
+
+.advantage h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #FF5500;
+    box-shadow: #FF1100 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px;
+    transition: 0.5s;
+}
+
+.container .box:hover {
+    transform: translateY(-20px);
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF4400;
+}
+
+.container .box .content_box {
+    position: relative;
+    z-index: 10;
+    padding: 10px 40px;
+}
+
+.container .box .content_box h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container .box .content_box p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.4em;
+    text-align: justify;
+} 
+
+.container .box .content_box img {
+    display: inline-block;
+    margin-top: -100px;
+    padding-bottom: 60px;
+    color: #fff;
+    filter: invert(100%);
+}
+
+.container .box .content_box .suporte{
+    margin-top: -100px;
+    padding-bottom: 40px;
+}
+/* FIM VANTAGENS */
+
+/* FOOTER */
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 5px 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.footer p, h3 {
+    color: #fff; 
+}
+
+.footer span {
+    font-weight: 500;
+}
+
+.sci {
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 3em;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.sci li a:hover {
+    transform: translateY(-10px);
+}
+/* FIM FOOTER */
+/* FIM PAG HOME */
+
+/* PAG CONTATO */
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.contactUs .title h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.contactUs h3 {
+    color: #FF5000;
+    font-size: 1.5em;
+}
+
+.map {
+    grid-area: map;
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.info {
+    grid-area: info;
+}
+
+.infoBox {
+    margin-top: 15px;
+}
+
+.infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.infoBox div p, a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.infoBox .link:hover {
+    transform: translateX(20px);
+    transition: 0.25s;
+}
+
+.infoBox a:hover {
+    color: #FF5500;
+    font-weight: 700;
+}
+
+.hour {
+    grid-area: hour;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "map info" "map hour";
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+/* FIM PAG CONTATO */
+
+/* PAG LOCACAO */
+/* DOCS */
+.docs {
+    margin: 100px 0 50px 0;
+    padding: 0 20px;
+}
+
+.docs h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+.docs .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.docs .container .box {
+    position: relative;
+    width: 480px;
+    height: 400px;
+    color: #fff;
+    background: #FF5500;
+    box-shadow: #ac0505 0px 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 40px 40px 0;
+    transition: 0.5s;
+}
+
+.docs .container .box:hover {
+    transform: translateY(-10px);
+}
+
+.docs .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+.docs .container .box .content_box {
+    position: relative;
+    z-index: 10;
+    width: 450px;
+}
+
+.docs .container .box .content_box h2 {
+    font-size: 2em;
+    color: #FF5500;
+    margin-bottom: 0px;
+    
+}
+
+.docs .container .box .content_box p {
+    font-size: 1.3em;
+    color: #FF5500;
+    line-height: 2em;
+    text-align: justify;
+} 
+
+hr {
+    margin-bottom: 10px;
+}
+/* FIM DOCS */
+
+/* MAQUINAS */
+
+.maquinas {
+   /* border: solid 1px #fff;*/
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+      
+}
+
+.maquina {
+    /* border: solid 1px #fff;*/
+    margin: 30px;
+    margin-left: 0px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.maquina img {
+    height: 170px;
+    transition: 0.5s;
+}
+
+.maquina img:hover {
+    transform:scale(1.3);
+}
+
+.maquina p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #FFF;
+    font-weight: 500;
+    background-color: #cc3904;
+    padding: 5px 10px; 
+}
+
+/* FIM MAQUINAS */
+/* FIM PAG LOCACAO */
+
+/*------------------------------------------------------------------------*/
+
+/* RESPONSIVE */
+/* RESPONSIVE 1399px */
+@media (max-width: 1399px) {
+    .logo {
+        max-width: 450px;
+    }
+}
+
+/* RESPONSIVE 1259px */
+@media (max-width: 1399px) {
+    .logo {
+        max-width: 350px;
+    }
+
+    .contactUs {
+        padding: 20px; 
+    }
+
+    .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "map" "info" "hour";
+        margin-bottom: 60px;
+    }
+    
+}
+
+/* RESPONSIVE 991px */
+@media (max-width: 991px) {
+    .main {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 120px 0 40px;
+    }
+
+    .content .text {
+        width: 100%;
+    }
+
+    .content .text h2 {
+        font-size: 3em;
+    }
+
+    .slider {
+        margin-top: 40px;
+    }
+
+    .slider .slides img {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .footer {
+        position: relative;
+        padding: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FF5000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navigation.active li {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: inline-block;
+    }
+
+    .toggle {
+        position: relative;
+        width: 32px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 40px;
+    }
+
+    .toggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.25s;
+    }
+
+    .toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    .toggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(10px);
+        transition: 0.25s;
+    }
+
+    .toggle.active::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+
+    .docs {
+        margin: 0 20px;
+    }
+
+    .docs h3 {
+        font-size: 1.3em;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+}
+
+/* RESPONSIVE 480px */
+@media (max-width: 480px) {
+
+    header,
+    .main {
+        padding: 20px;
+    }
+
+    .toggle.active {
+        right: 40px;
+    }
+
+    .content .text h2 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 15px 30px;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sci {
+        margin-top: 40px;
+    }
+}
+/* FIM RESPONSIVE */
