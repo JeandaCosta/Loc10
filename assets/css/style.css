@@ -659,10 +659,23 @@ hr {
     }
 
     .docs h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-weight: 400;
         color: #fff;
         text-transform: uppercase;
+        text-align: center;
+    }
+
+    .docs .container .box {
+        width: 300px;
+    }
+
+    .docs .container .box .content_box h2 {
+        font-size: 1.2em;
+    }
+
+    .docs .container .box .content_box p {
+        font-size: 0.95em;
     }
 
 }
@@ -673,6 +686,15 @@ hr {
     header,
     .main {
         padding: 20px;
+    }
+
+    .logo {
+        max-width: 260px;
+    }
+
+    .main h1 {
+        font-size: 2em;
+        text-align: center;
     }
 
     .toggle.active {
@@ -695,5 +717,6 @@ hr {
     .sci {
         margin-top: 40px;
     }
+
 }
 /* FIM RESPONSIVE */
